@@ -7,7 +7,7 @@ class Banner extends Component{
     render(){
         return(
             <>
-                <div className="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                <div className="jumbotron p-4 p-md-5 text-white rounded bg-dark bottom-feo">
                     <div className="col-md-12 px-0">
                     <h2 className="display-4 font-italic nav justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-controller" viewBox="0 0 16 16">

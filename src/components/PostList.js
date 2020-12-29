@@ -9,7 +9,7 @@ class PostList extends Component{
         return(
             <>
                 <div className="row mb-2">
-                    <div className="row">
+                    <div className="row mg-feo">
                     {this.props.gameList.map(gameItem => {
                         return(
                             <Post 

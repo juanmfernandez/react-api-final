@@ -5,3 +5,11 @@
 .card-component{
     width: 18rem;
 }
+
+.mg-feo{
+    margin-left: 15px  !important;
+}
+
+.bottom-feo{
+    margin-bottom: 0rem !important;
+}

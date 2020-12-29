@@ -7,35 +7,46 @@ class Header extends Component{
     render(){
         return(
             <>
-                <header className="blog-header py-3">
+                <header className="blog-header py-3 bg-warning">
                     <div className="nav flex-nowrap justify-content-between align-items-center">
-                    <div className="col-1 pt-1">
-                        <Link to='/addpost' className="blog-header-logo text-dark">Plataforma</Link>
+                        <div className="col-1 pt-1">
+                            <Link to='/addpost' className="blog-header-logo text-dark">Plataforma</Link>
+                        </div>
+                        <div className="col-1 text-center">
+                            <Link to='/' className="blog-header-logo text-dark">Categoría</Link>
+                        </div> 
+                        <div className="col-1 text-center">
+                            <Link to='/' className="blog-header-logo text-dark">Home</Link>
+                        </div>
                     </div>
-                    <div className="col-1 text-center">
-                        <Link to='/' className="blog-header-logo text-dark">Ordenar</Link>
-                    </div>                    
-                    <div className="col-1 text-center">
-                        <Link to='/' className="blog-header-logo text-dark">Categoría</Link>
-                    </div> 
-                    <div className="col-1 text-center">
-                        <Link to='/' className="blog-header-logo text-dark">Home</Link>
-                    </div>
-                    </div>
-                    
 
-                        <div className="btn-group">
-                        <button type="button" className="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Action
-                        </button>
-                        <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#">Action</a>
-                            <a className="dropdown-item" href="#">Another action</a>
-                            <a className="dropdown-item" href="#">Something else here</a>
-                            <div className="dropdown-divider"></div>
-                            <a className="dropdown-item" href="#">Separated link</a>
+                    <div className="nav flex-nowrap justify-content-between align-items-center">
+                        <div className="col-1 text-center">
+                            <Link to={{
+                                pathname: `/plataforma/pc`,
+                            }} className="badge badge-secondary" >pc</Link>
+                            <Link to={{
+                                pathname: `/plataforma/browser`,
+                            }} className="badge badge-secondary" >browser</Link>
+                        </div> 
+                        <div className="col-1 text-center">
+                            <Link to={{
+                                pathname: `/categoria/mmorpg`,
+                            }} className="badge badge-secondary" >mmorpg</Link>
+
+                            <Link to={{
+                                pathname: `/categoria/shooter`,
+                            }} className="badge badge-secondary" >shooter</Link>
+
+                            <Link to={{
+                                pathname: `/categoria/pvp`,
+                            }} className="badge badge-secondary" >pvp</Link>
                         </div>
+                        <div className="col-1 text-center">
+
                         </div>
+                    </div>
+
                 </header>
             </>
         )

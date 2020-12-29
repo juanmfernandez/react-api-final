@@ -17,7 +17,13 @@ class Game extends Component{
                     <div className="mb-1 text-muted">{this.props.genero}</div>
                     <p className="card-text mb-auto">{this.props.descripcion}</p>
                     <div className="mb-1 text-muted">{this.props.desarrolador} | {this.props.publisher} </div>
-                    <p className="card-text mb-auto">ID: {this.props.id}</p>
+                    <p className="card-text mb-auto">ID: {this.props.id} 
+                    <div className="float-right"> 
+                            <Link to={{
+                                pathname: `/`,
+                            }} className="btn btn-info">Home</Link>
+                        </div>
+                    </p>
                     </div>
                     <div className="col-auto d-none d-lg-block">
                     </div>

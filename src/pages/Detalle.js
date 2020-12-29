@@ -29,6 +29,7 @@ class Detalle extends Component{
             };
             const response = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${handle}`, noCors);
             const data = await response.json();
+            
             console.log(data);
             this.setState({
                 loading:false,
@@ -42,11 +43,10 @@ class Detalle extends Component{
     }
 
     render(){
-
         return(
-                
+                <>
+                <Banner />
                 <div className="container">
-                    <Header />
     
                 {!this.state.loading && 
                 <Game 
@@ -67,6 +67,7 @@ class Detalle extends Component{
                 {this.state.message && <h6 className="text-center">Se ha producido un error: {this.state.message} El unico que existe es el 452</h6>}
                 
                 </div>
+                </>
         )
     }
 
