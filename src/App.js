@@ -8,6 +8,7 @@ import Detalle from './pages/Detalle';
 import Categoria from './pages/Categoria';
 import Plataforma from './pages/Plataforma';
 
+
 class App extends Component {
   render(){
     return (
@@ -17,11 +18,9 @@ class App extends Component {
           <Route exact path='/addpost' component={AddPost} />
           <Route exact path='/detalle/:handle' component={Detalle} />
           <Route exact path='/categoria/:handle' component={Categoria} />
-          <Route exact path='/plataforma/:handle' component={Plataforma} />
-
-          
+          <Route exact path='/plataforma/:handle'component={Plataforma} />
         </Switch>
-      </BrowserRouter>
+     </BrowserRouter> 
     );
   }
 }

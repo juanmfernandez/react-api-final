@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 class Post extends Component{
     render(){
-        //console.log(this.props.titulo);
         return(
             <>
             <div className="card">
